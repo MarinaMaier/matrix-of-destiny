@@ -1,0 +1,50 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+/.pnp
+.pnp.js
+
+# Tailwind generated CSS files
+*.css
+
+# Build output
+dist/
+build/
+
+# Static files
+*.log
+*.gz
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git-specific files
+.git/
+
+# Coverage reports
+coverage/
+
+# Others
+*.tmp
+*.bak
+*.old
