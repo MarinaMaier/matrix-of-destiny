@@ -43,7 +43,7 @@ const LandingPage = () => {
             </button>
             <button
               onClick={() => setLanguage("ru")}
-              className={`px-4 py-2 rounded mr-2 px-4 py-2 rounded ${
+              className={`px-4 py-2 rounded ${
                 language === "ru"
                   ? "bg-gray-200 text-blue-900"
                   : "bg-blue-900 text-white"
@@ -60,7 +60,7 @@ const LandingPage = () => {
         id="hero"
         className="relative h-screen bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/hero.png')",
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/hero.png)`,
         }}
       >
         <div className="absolute inset-x-0 bottom-0 text-center bg-white bg-opacity-70 p-6">
@@ -86,7 +86,7 @@ const LandingPage = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="/images/team.jpg"
+              src={`${process.env.PUBLIC_URL}/images/team.jpg`}
               alt="Our Team"
               className="rounded-lg shadow-lg"
             />
@@ -101,7 +101,7 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 bg-white rounded-lg shadow">
               <img
-                src="/images/service1.jpg"
+                src={`${process.env.PUBLIC_URL}/images/service1.jpg`}
                 alt="Matrix Calculations"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
@@ -110,7 +110,7 @@ const LandingPage = () => {
             </div>
             <div className="p-6 bg-white rounded-lg shadow">
               <img
-                src="/images/service2.jpg"
+                src={`${process.env.PUBLIC_URL}/images/service2.jpg`}
                 alt="In-Person Guidance"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
@@ -119,7 +119,7 @@ const LandingPage = () => {
             </div>
             <div className="p-6 bg-white rounded-lg shadow">
               <img
-                src="/images/service3.jpg"
+                src={`${process.env.PUBLIC_URL}/images/service3.jpg`}
                 alt="Workshops"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
