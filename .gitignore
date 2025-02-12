@@ -12,8 +12,6 @@ yarn-error.log*
 /.pnp
 .pnp.js
 
-# Tailwind generated CSS files
-*.css
 
 # Build output
 dist/
